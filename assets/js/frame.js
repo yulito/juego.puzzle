@@ -90,12 +90,13 @@ function finJuego(){
     //eliminar usuario y nivel, y reiniciar web
     sessionStorage.removeItem("nombre");
     sessionStorage.removeItem("nivel");
-    refrescar();
+    alInicio();
 
 }
-
-function refrescar(){    
-    //location.reload();
+function refrescar(){
+    location.reload();
+}
+function alInicio(){    
     swal({
         title: "HAS TERMINADO TODOS LOS NIVELES!! :)",                  
         icon: "success",                    
