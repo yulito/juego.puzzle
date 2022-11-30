@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PUZZLE JS</title>
+    <link rel="shortcut icon" href="game_puzzle.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="assets/img/logo.png" alt="">
+        </div>
+        <div class="nombre">
+            <h2 class="jugador">--</h2>
+        </div>
+        <div class="datos">
+            <!----------- CONTADOR CLICS Y CUENTA FALLOS --------->
+            <label for=""><strong>nro de clics: </strong> <span class="click"> 0 </span></label>
+        </div>
+    </header>
+    
+    <div class="principal">
+
+        <!------------------------ TABLERO SELECCION ------------------------->
+        <aside>
+            <div class="label">
+                <label for=""><strong class="capa">Fichas: </strong></label>
+            </div>
+            <ul class="seleccion">
+                <li id="s1">
+                    <div class="select s1x1"><input type="hidden" class="s1" ></div>
+                    <div class="select s1x2"><input type="hidden" class="s2" ></div>
+                    <div class="select s1x3"><input type="hidden" class="s3" ></div>
+                    <div class="select s1x4"><input type="hidden" class="s4" ></div>
+                </li>
+                <li id="s2">
+                    <div class="select s2x1"><input type="hidden" class="s5" ></div>
+                    <div class="select s2x2"><input type="hidden" class="s6" ></div>
+                    <div class="select s2x3"><input type="hidden" class="s7" ></div>
+                    <div class="select s2x4"><input type="hidden" class="s8" ></div>
+                </li>
+                <li id="s3">
+                    <div class="select s3x1"><input type="hidden" class="s9" ></div>
+                    <div class="select s3x2"><input type="hidden" class="s10" ></div>
+                    <div class="select s3x3"><input type="hidden" class="s11" ></div>
+                    <div class="select s3x4"><input type="hidden" class="s12" ></div>
+                </li>
+                <li id="s4">
+                    <div class="select s4x1"><input type="hidden" class="s13" ></div>
+                    <div class="select s4x2"><input type="hidden" class="s14" ></div>
+                    <div class="select s4x3"><input type="hidden" class="s15" ></div>
+                    <div class="select s4x4"><input type="hidden" class="s16" ></div>
+                </li>
+                <li id="s5">
+                    <div class="select s5x1"><input type="hidden" class="s17" ></div>
+                    <div class="select s5x2"><input type="hidden" class="s18" ></div>
+                    <div class="select s5x3"><input type="hidden" class="s19" ></div>
+                    <div class="select s5x4"><input type="hidden" class="s20" ></div>
+                </li>
+                <li id="s6">
+                    <div class="select s6x1"><input type="hidden" class="s21" ></div>
+                    <div class="select s6x2"><input type="hidden" class="s22" ></div>
+                    <div class="select s6x3"><input type="hidden" class="s23" ></div>
+                    <div class="select s6x4"><input type="hidden" class="s24" ></div>
+                </li>
+                <li id="s7">
+                    <div class="select s7x1"><input type="hidden" class="s25" ></div>
+                    <div class="select s7x2"><input type="hidden" class="s26" ></div>
+                    <div class="select s7x3"><input type="hidden" class="s27" ></div>
+                    <div class="select s7x4"><input type="hidden" class="s28" ></div>
+                </li>
+                <li id="s8">
+                    <div class="select s8x1"><input type="hidden" class="s29" ></div>
+                    <div class="select s8x2"><input type="hidden" class="s30" ></div>
+                    <div class="select s8x3"><input type="hidden" class="s31" ></div>
+                    <div class="select s8x4"><input type="hidden" class="s32" ></div>
+                </li>
+            </ul>
+        </aside>
+        <!-------------------------- TABLERO JUEGO --------------------------->
+        
+        <section>
+            <div class="label">
+                <label for=""><strong class="capa">Tablero: </strong></label>
+            </div>
+            <ul class="juego">
+                <li id="f1">
+                    <div class="box f1x1"></div>
+                    <div class="box f1x2"></div>
+                    <div class="box f1x3"></div>
+                    <div class="box f1x4"></div>
+                    <div class="box f1x5"></div>
+                    <div class="box f1x6"></div>
+                    <div class="box f1x7"></div>
+                    <div class="box f1x8"></div>
+                </li>
+                <li id="f2">
+                    <div class="box f2x1"></div>
+                    <div class="box f2x2"></div>
+                    <div class="box f2x3"></div>
+                    <div class="box f2x4"></div>
+                    <div class="box f2x5"></div>
+                    <div class="box f2x6"></div>
+                    <div class="box f2x7"></div>
+                    <div class="box f2x8"></div>
+                </li>
+                <li id="f3">
+                    <div class="box f3x1"></div>
+                    <div class="box f3x2"></div>
+                    <div class="box f3x3"></div>
+                    <div class="box f3x4"></div>
+                    <div class="box f3x5"></div>
+                    <div class="box f3x6"></div>
+                    <div class="box f3x7"></div>
+                    <div class="box f3x8"></div>
+                </li>
+                <li id="f4">
+                    <div class="box f4x1"></div>
+                    <div class="box f4x2"></div>
+                    <div class="box f4x3"></div>
+                    <div class="box f4x4"></div>
+                    <div class="box f4x5"></div>
+                    <div class="box f4x6"></div>
+                    <div class="box f4x7"></div>
+                    <div class="box f4x8"></div>
+                </li>
+            </ul>
+        </section>        
+    </div>
+    
+</body>
+<script src="assets/js/main.js" type="module"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</html>
